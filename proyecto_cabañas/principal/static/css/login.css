@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #f0f5f1; /* Fondo claro y relajante */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4a7c59; /* Verde oscuro */
+    color: white;
+    padding: 15px 0;
+}
+
+/* Logo */
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Resta el espacio del header */
+    padding: 20px;
+}
+
+.container2 {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Asegura que sea responsivo */
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a7c59; /* Color del texto */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4a7c59; /* Cambio de color al enfocar */
+    outline: none;
+}
+
+/* Button Styles */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a7c59; /* Color del botón */
+    color: white;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #355f4b; /* Color más oscuro al pasar el ratón */
+}
+
+/* Secondary Button */
+.btn-secondary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6b8f71; /* Color secundario */
+    color: white;
+    margin-top: 10px; /* Espacio superior */
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a7a62; /* Color más oscuro al pasar el ratón */
+}
+
+/* Error Message */
+#loginError {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-section {
+        padding: 10px;
+    }
+
+    .container2 {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em; /* Ajustar tamaño del texto */
+    }
+}
